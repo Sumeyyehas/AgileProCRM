@@ -19,7 +19,7 @@ public class TasksPage {
     @FindBy(id= "tasks_panel_menu_view_all")
     public WebElement allButton;
 
-    @FindBy(css = "div[title='Default filter']")
+    @FindBy(css = "div[class='main-ui-square-item']")
     public WebElement InProgressTab;
 
     @FindBy(id= "tasks_panel_menu_view_role_responsible")

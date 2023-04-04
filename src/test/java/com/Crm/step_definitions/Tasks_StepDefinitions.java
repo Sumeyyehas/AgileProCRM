@@ -7,6 +7,7 @@ import com.Crm.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class Tasks_StepDefinitions {
 
@@ -30,7 +31,9 @@ public class Tasks_StepDefinitions {
 
     @Then("user should be able to display tasks -In progress-")
     public void user_should_be_able_to_display_tasks_in_progress() {
-        tasksPage.InProgressTab.isDisplayed();
+        //tasksPage.InProgressTab.isDisplayed()
+        Assert.assertTrue(tasksPage.InProgressTab.isDisplayed());
+
     }
 
     @When("user clicks Ongoing tab")
@@ -39,7 +42,7 @@ public class Tasks_StepDefinitions {
     }
     @Then("user should be able to display tasks -Ongoing-")
     public void user_should_be_able_to_display_tasks_ongoing() {
-        tasksPage.OngoingTab.isDisplayed();
+       Assert.assertTrue(tasksPage.OngoingTab.isDisplayed());
     }
 
 
